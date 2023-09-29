@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Website Home</title>
+	<link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/styling.css">
+</head>
+<body>
+    <div class="title-bar">
+        <div class="title-bar-left">
+            <div class="grid-x">
+                <div class="cell hide-for-medium">
+                    <button class="menu-icon" type="button" data-toggle="offCanvas"></button>
+                </div>
+                <div class="grid-x hide-for-small-only">
+                    <a class="title-text" href="index.html">Welcome</a>
+                    <a class="title-text" href="projects.html">My Projects</a>
+                    <a class="title-text" href="resume.html">Resume</a>
+                    <a class="title-text" href="funstuff.html">Fun Stuff</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="off-canvas-wrapper">
+        <!-- Your menu or Off-canvas content goes here -->
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+
+            <!-- Close button -->
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <!-- Menu -->
+            <ul class="vertical menu">
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="funstuff.html">Fun Stuff</a></li>
+            </ul>
+        </div>
+
+            
+        <!-- Your page content lives here -->
+        <!-- main content within a `grid-container` -->
+        <div class="off-canvas-content" data-off-canvas-content>
+            <div class="grid-container spacer">
+                <!-- `grid-x` represents a row -->
+                <div class="grid-x grid-padding-x">
+                    <div class="cell header"> <img class="img-background" src="./images/welcome_img.png"></div>
+                </div>
+                <div class="grid-x grid-padding-x textbox">
+                    <div class="cell large-8 text">Hello! My name is Pedro Cruz and I am a student at the 
+                        University of St. Thomas. I am a Computer Science major and I'm currently looking at a minor in Game Design. 
+                        Video games have always been a big part of my life and I'd love to be able to be a part of the industry that 
+                        has brought so much entertainment and joy throughout my life. My goal for after college is to find an entry 
+                        level position in a game development company, but if I'm unable to find one I'll find a good paying job and 
+                        work hard to develop my skills and pay off my student loans as soon as possible.
+
+                    </div>
+                    <div class="cell large-4 small-12 text"><img src="./images/me_2.jpg" alt="Pedro Cruz"></div>
+                </div>
+                <div class="grid-x grid-padding-x">
+                    <div class="cell filler"></div>
+                </div>
+                    
+            </div>
+        </div>
+    </div>    
+
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+</body>
+</html>
