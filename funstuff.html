@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fun Stuff</title>
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/styling.css">
+    </head>
+    <body>
+        <div class="title-bar">
+            <div class="title-bar-left">
+                <div class="grid-x">
+                    <div class="cell hide-for-medium">
+                        <button class="menu-icon" type="button" data-toggle="offCanvas"></button>
+                    </div>
+                    <div class="grid-x hide-for-small-only">
+                        <a class="title-text" href="index.html">Welcome</a>
+                        <a class="title-text" href="projects.html">My Projects</a>
+                        <a class="title-text" href="resume.html">Resume</a>
+                        <a class="title-text" href="funstuff.html">Fun Stuff</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="off-canvas-wrapper">
+            <!-- Your menu or Off-canvas content goes here -->
+            <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+                <!-- Close button -->
+                <button class="close-button" aria-label="Close menu" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+    
+                <!-- Menu -->
+                <ul class="vertical menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">My Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="funstuff.html">Fun Stuff</a></li>
+                </ul>
+            </div>
+            <!-- Your page content lives here -->
+            <div class="off-canvas-content" data-off-canvas-content>
+                <!-- main content within a `grid-container` -->
+                <div class="grid-container spacer">
+                    <!-- `grid-x` represents a row -->
+                    <div class="grid-x grid-padding-x header">
+                        <div class="cell textbox">Fun Facts!</div>
+                    </div>
+                    
+                    <div class="grid-x grid-padding-x textbox">
+                        <div class="cell large-8 text spacer">The first thing I wanna talk about is my rather long background in music. I 
+                            really love music, and I've been playing instruments and performing in ensembles since 5th grade! I 
+                            remember before then always looking forward to music class and getting to sing at songfests. I started
+                            playing cello in 5th grade, which I unfortunetally can't get a picture of because it's back home. After that
+                            I started playing the Tuba in 6th grade, which I continue to play today in the St. Thomas Symphonic Band!
+                            In 9th grade I joined choir because that was when the school allowed kids to take all three. I also switched
+                            to playing upright bass in 8th grade and later on in 10th grade I learned that electric bass is incredibly 
+                            similar, which I also still play today in the St. Thomas Guitar Ensemble.
+                        </div>
+                        
+                        <div class="cell large-4 text spacer"><img src="./images/instruments1_1.jpg" alt="My bass guitar and tuba"></div>
+
+                        <div class="cell text spacer">I was also in the school Muscials from 8th grade until I graduated from Highschool, 
+                            which is 5 different musicals that I played a (often small) role in!
+                        </div>
+
+                        <div class="cell large-8 hide-for-large text">The first musical I was in was "The Lion King Jr." where I got 
+                            to play the role of Mufasa. It was so much fun but also a bit scary because at the time I wasn't in choir 
+                            and wasn't very confident in my singing voice.
+                        </div>
+                        <div class="cell large-4 text"><img src="./images/musical1_1.jpg" alt="Lion King Jr. Musical">
+                        </div>
+                        <div class="cell large-8 hide-for-small-only hide-for-medium-only text">The first musical I was in was "The Lion King Jr." where I got 
+                            to play the role of Mufasa. It was so much fun but also a bit scary because at the time I wasn't in choir 
+                            and wasn't very confident in my singing voice.
+                        </div>
+                        <div class="cell large-offset-1 medium-offset-5 small-offset-3 text spacer" style="text-align: left;">Thats me in the center!</div>
+
+                        <div class="cell large-8 text">The next musical I was in was "Sister Act" in ehich I had the role of chorus, 
+                            except for one scene where I was a taxi driver which is the scene that the image is from! For my second
+                            year doing musicals it was still so fun even though I didnt have a very large role.
+                        </div>
+                        <div class="cell large-4 text spacer"><img src="./images/musical2_2.jpg" alt="Sister Act Muscial">A fun scene where I 
+                            got threatened by a mob boss with a fake gun!
+                        </div>
+
+                        <div class="cell text">For the other 3 musicals, I couldn't get any pictures but I can still talk about them!
+                            For my 10th grade year, I was in "Into the Woods". I was chorus again and if I had to choose a musical I
+                            liked the least it would definitaly be this one because it wasn't made with a chorus so there wasn't much 
+                            we did. For 11th grade, I was in "Mamma Mia" where I was chorus and a small role where I was Father 
+                            Alexandrios. This one was lots of fun, Mamma Mia is a classic and has some great songs and fun choriography.
+                            The final musical I was in was "Newsies", in which I played Pulitzer. It was super fun to be the bad guy
+                            and was a lot interesting character to play.
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <!-- include before closing <body> tag -->
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/vendor/foundation.js"></script>
+        <script type="application/javascript">
+            $(document).foundation();
+        </script>
+    </body>
+</html>

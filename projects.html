@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects</title>
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/styling.css">
+    </head>
+    <body>
+        <div class="title-bar">
+            <div class="title-bar-left">
+                <div class="grid-x">
+                    <div class="cell hide-for-medium">
+                        <button class="menu-icon" type="button" data-toggle="offCanvas"></button>
+                    </div>
+                    <div class="grid-x hide-for-small-only">
+                        <a class="title-text" href="index.html">Welcome</a>
+                        <a class="title-text" href="projects.html">My Projects</a>
+                        <a class="title-text" href="resume.html">Resume</a>
+                        <a class="title-text" href="funstuff.html">Fun Stuff</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="off-canvas-wrapper">
+            <!-- Your menu or Off-canvas content goes here -->
+            <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+                <!-- Close button -->
+                <button class="close-button" aria-label="Close menu" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+    
+                <!-- Menu -->
+                <ul class="vertical menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">My Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="funstuff.html">Fun Stuff</a></li>
+                </ul>
+            </div>
+            <!-- Your page content lives here -->
+            <div class="off-canvas-content" data-off-canvas-content>
+                <!-- main content within a `grid-container` -->
+                <div class="grid-container spacer">
+                    <!-- `grid-x` represents a row -->
+                    <div class="grid-x grid-padding-x header">
+                        <div class="cell textbox">Projects</div>
+                    </div>
+                    <div class="grid-x grid-padding-x textbox">
+                        <div class="cell text">Now, for a bit of honesty, I haven't really done any projects in my freetime. All 
+                            the projects on this list are going to be assignments from clases I've taken, but that doesn't mean that I'm
+                            any less proud of what I've accompleshed so far during my time so far here at St. Thomas.
+                        </div>
+                        <div class="cell subheader">Project 1</div>
+                        <div class="cell large-6 text">Now, I know that this project may not look like much, and that's because it 
+                            really isn't, but I decided the the best thing to start off with would be my very first lab assignment that 
+                            I had. This project was my very first expeirience with coding and will always hold a special place in my 
+                            heart because of that.
+
+                        </div>
+                        <div class="cell large-6 text"><img src="./images/project1.jpg"/></div>
+                        <div class="cell subheader">Project 2</div>
+                        <div class="cell large-6 text">For the second project, I chose the final assignment of CISC 231, the self 
+                            balancing binary search tree that we made. I decided on this lab not only becasue I really enjoyed 231, 
+                            but also becasue I thought that the idea that we can make a tree that automatically balances itself was 
+                            really cool at the time and it was really fun to figure out how to implement that. Shown in the image is
+                            the balance method and the tree's iterator. 
+
+                        </div>
+                        <div class="cell large-6 text"><img src="./images/project2-1.jpg"/></div>
+                        <div class="cell subheader">Project 3</div>
+                        <div class="cell large-6 text">For the final project, I'm choosing one of the assignment that I commited the 
+                            most amount of time to getting finished, which is the 4th assignment from CISC 440 AI and Robotics. I
+                            pulled an all-nighter to get this assignment done, working on it for about 12 hours straight (not including
+                            the occasional break to think, rest, or eat). The assignment itself is a game of tic-tac-toe that has an ai
+                            opponent that will always make the most optimal move to counter you. It was written in LISP and the image 
+                            shows one of the four funtions used by the ai to find the best move possible.
+
+                        </div>
+                        <div class="cell large-6 text"><img src="./images/project3-1.jpg"/></div>
+                        <div class="cell subheader">Future Projects!</div>
+                        <div class="cell text"> I have a few projects that are either in progress or will be happening this semester 
+                            in other classes. The two that I'm most excited about are the two games that I am going to be making in 
+                            DIMA 246, Game Design. The other is a personal project that I am going to be slowly working on over this 
+                            semester using the skills I learn in this class to make a website. I also hope to start working on a game 
+                            of my own over J-term so I can hopefully get it finished by the time graduation rolls around!
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- include before closing <body> tag -->
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/vendor/foundation.js"></script>
+        <script type="application/javascript">
+            $(document).foundation();
+        </script>
+    </body>
+</html>
